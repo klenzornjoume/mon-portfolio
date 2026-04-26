@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <title>Portfolio — EPIE NJOUME Klenzor Loic | Administration & Sécurité Réseau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-logo">EPIE NJOUME<span>.</span>Klenzor Loic</div>
+  <div class="nav-links">
+    <a href="#hero">Accueil</a>
+    <a href="#about">À Propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#experience">Expérience</a>
+    <a href="#formation">Formation</a>
+    <a href="#projects">Projets</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="hamburger" id="hamburger" role="button" aria-label="Menu" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="close-btn" id="closeMenu">✕</span>
+  <a href="#hero" class="mob-link">Accueil</a>
+  <a href="#about" class="mob-link">À Propos</a>
+  <a href="#skills" class="mob-link">Compétences</a>
+  <a href="#experience" class="mob-link">Expérience</a>
+  <a href="#formation" class="mob-link">Formation</a>
+  <a href="#projects" class="mob-link">Projets</a>
+  <a href="#certifications" class="mob-link">Certifications</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🎓 Étudiant en Licence Pro</div>
+    <h1 class="hero-name">
+      <span class="first"><!-- PRÉNOM -->Klenzor Loic</span>
+      <span class="last"><!-- NOM -->EPIE NJOUME</span>
+    </h1>
+    <p class="hero-title">
+      Administration &amp; Sécurité Réseau
+    </p>
+    <p class="hero-desc">
+      <!-- PRÉSENTATION COURTE - Modifiez ce texte -->
+      Passionné par les infrastructures réseau et la cybersécurité, je construis des systèmes fiables, sécurisés et scalables. Actuellement en Licence Professionnelle à l'Institut Supérieur de l'Emergence.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary">
+        <!-- Icône enveloppe -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Me contacter
+      </a>
+      <a href="#" class="btn-secondary" id="cv-download">
+        <!-- Icône téléchargement -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Télécharger CV
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-frame">
+      <div class="photo-deco-ring"></div>
+      <div class="photo-glow"></div>
+      <!--
+        ✏️ POUR AJOUTER VOTRE PHOTO :
+        Remplacez le bloc .photo-placeholder ci-dessous par :
+        <img class="photo-img" src="votre-photo.jpg" alt="[Votre Nom]" />
+      -->
+      <!-- <div class="photo-placeholder" id="photo-placeholder">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span style="font-size:0.72rem;letter-spacing:.1em;text-transform:uppercase;">Votre Photo</span>
+        <span style="font-size:0.65rem;color:var(--text-muted);">Cliquez pour modifier</span>
+      </div> -->
+      <img class="photo-img" src="123.jpeg" alt="Klenzor" />
+      <!-- <input type="file" id="photo-input" accept="image/*" style="display:none"/> -->
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-chip">
+        <span class="num" data-target="3">3</span>
+        <span class="lbl">Ans études</span>
+      </div>
+      <div class="stat-chip">
+        <span class="num" data-target="2">2</span>
+        <span class="lbl">Projets</span>
+      </div>
+      <div class="stat-chip">
+        <span class="num" data-target="0">0</span>
+        <span class="lbl">Certifs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     À PROPOS
+══════════════════════════════════════════════ -->
+<section id="about">
+  <div class="about-text">
+    <div class="section-label">Qui suis-je ?</div>
+    <h2 class="section-title">À propos <em>de moi</em></h2>
+    <div class="section-divider"></div>
+
+    <!-- ✏️ MODIFIEZ CE PARAGRAPHE -->
+    <p>
+      Étudiant en <strong>Licence Professionnelle Administration et Sécurité Réseau</strong>, je suis animé par la passion des systèmes informatiques et la protection des données. Mon parcours académique m'a permis de développer une solide base théorique et pratique en gestion des infrastructures réseau.
+    </p>
+    <p>
+      Je maîtrise les protocoles réseau fondamentaux (TCP/IP, DNS, DHCP), les technologies de virtualisation ainsi que les outils de supervision et de sécurité. Je suis également à l'aise avec l'administration des systèmes Linux et Windows Server.
+    </p>
+    <p>
+      En dehors des études, je pratique la <strong>veille technologique</strong>, contribue à des projets open source liés aux réseaux.
+    </p>
+
+    <div class="about-info-grid">
+      <div class="info-item">
+        <div class="lbl">Localisation</div>
+        <div class="val">Yaounde, CAMEROUN</div>
+      </div>
+      <div class="info-item">
+        <div class="lbl">Formation</div>
+        <div class="val">Licence Pro ASR</div>
+      </div>
+      <div class="info-item">
+        <div class="lbl">Email</div>
+        <div class="val">klenzornjoume1@gmail.com</div>
+      </div>
+      <div class="info-item">
+        <div class="lbl">Disponibilité</div>
+        <div class="val"><!-- Alternance / Stage -->[Alternance / Stage]</div>
+      </div>
+      <div class="info-item">
+        <div class="lbl">Téléphone</div>
+        <div class="val">+237697794398 / 682346885 / 621009326</div>
+      </div>
+      <div class="info-item">
+        <div class="lbl">LinkedIn</div>
+        <div class="val">linkedin.com/Klenzor-njoume-4a0096302</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-visual">
+    <div class="network-card">
+      <h4>// Statut Réseau</h4>
+      <div class="network-node">
+        <div class="node-dot green"></div>
+        <span class="node-label">Disponible pour stage</span>
+        <span class="node-value">ACTIF</span>
+      </div>
+      <div class="network-node">
+        <div class="node-dot blue"></div>
+        <span class="node-label">En cours de formation</span>
+        <span class="node-value">ACTIF</span>
+      </div>
+      <div class="network-node">
+        <div class="node-dot gold"></div>
+        <span class="node-label">Projets réseau</span>
+        <span class="node-value">3 actifs</span>
+      </div>
+      <div class="network-node">
+        <div class="node-dot green"></div>
+        <span class="node-label">Localisation</span>
+        <span class="node-value">Yaounde</span>
+      </div>
+      <div class="network-node" style="border:none">
+        <div class="node-dot blue"></div>
+        <span class="node-label">Dernier commit</span>
+        <span class="node-value">Aujourd'hui</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     COMPÉTENCES
+══════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="section-label">Savoir-faire</div>
+  <h2 class="section-title">Mes <em>Compétences</em></h2>
+  <div class="section-divider"></div>
+
+  <div class="skills-grid">
+
+    <!-- Réseau -->
+    <div class="skill-category">
+      <div class="skill-cat-icon">🌐</div>
+      <div class="skill-cat-title">Réseaux</div>
+      <div class="skill-bar-list">
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">TCP/IP &amp; Protocoles</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Cisco / Routage &amp; Switching</span><span class="skill-bar-pct">90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">DNS / DHCP / VPN</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Wi-Fi &amp; LAN/WAN</span><span class="skill-bar-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sécurité -->
+    <div class="skill-category">
+      <div class="skill-cat-icon">🔒</div>
+      <div class="skill-cat-title">Sécurité Réseau</div>
+      <div class="skill-bar-list">
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Firewall &amp; ACL</span><span class="skill-bar-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Pentesting (bases)</span><span class="skill-bar-pct">45%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="45"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">IDS/IPS (Snort)</span><span class="skill-bar-pct">45%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="45"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Analyse de trafic (Wireshark)</span><span class="skill-bar-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Systèmes -->
+    <div class="skill-category">
+      <div class="skill-cat-icon">🖥️</div>
+      <div class="skill-cat-title">Systèmes &amp; Virtualisation</div>
+      <div class="skill-bar-list">
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Linux (Ubuntu / Debian)</span><span class="skill-bar-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">Windows Server</span><span class="skill-bar-pct">72%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span class="skill-bar-name">VMware / VirtualBox</span><span class="skill-bar-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <!-- <div class="skill-bar-item"> -->
+          <!-- <div class="skill-bar-top"><span class="skill-bar-name">Bash Scripting</span><span class="skill-bar-pct">65%</span></div> -->
+          <!-- <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <!-- Outils & Autres -->
+    <div class="skill-category">
+      <div class="skill-cat-icon">🛠️</div>
+      <div class="skill-cat-title">Outils &amp; Supervision</div>
+      <div class="skill-tags">
+        <!-- <span class="skill-tag">Nagios</span> -->
+        <!-- <span class="skill-tag">Zabbix</span> -->
+        <!-- <span class="skill-tag">GNS3</span> -->
+        <span class="skill-tag">Packet Tracer</span>
+        <span class="skill-tag">Nmap</span>
+        <span class="skill-tag">Metasploit</span>
+        <!-- <span class="skill-tag">Git</span> -->
+        <!-- <span class="skill-tag">Docker</span> -->
+        <span class="skill-tag gold-tag">Active Directory</span>
+        <!-- <span class="skill-tag gold-tag">pfSense</span> -->
+        <!-- <span class="skill-tag gold-tag">OpenVPN</span> -->
+        <!-- <span class="skill-tag gold-tag">Ansible</span> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     EXPÉRIENCE PROFESSIONNELLE
+══════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="section-label">Parcours professionnel</div>
+  <h2 class="section-title">Expériences <em>Pro</em></h2>
+  <div class="section-divider"></div>
+
+  <div class="timeline">
+
+    <!-- ✏️ EXPÉRIENCE 1 (la plus récente) -->
+    <!--<div class="timeline-item">
+      <div class="timeline-dot active"></div>
+      <div class="timeline-card">
+        <div class="timeline-period"> Ex: Sept. 2023 — Présent Sept. 2023 — Présent</div>
+        <div class="timeline-title"> Intitulé du poste Technicien Réseau (Alternance)</div>
+        <div class="timeline-subtitle"> Nom de l'entreprise • Ville [Nom Entreprise] · [Ville]</div>
+        <ul class="timeline-desc">
+          <li> Décrivez vos missions Administration et maintenance du réseau LAN/WAN de l'entreprise.</li>
+          <li>Configuration de switchs Cisco et routeurs (VLAN, STP, OSPF).</li>
+          <li>Surveillance des performances réseau via Zabbix et Nagios.</li>
+          <li>Participation à l'audit de sécurité de l'infrastructure.</li>
+        </ul>
+      </div>
+    </div>-->
+
+    <!-- ✏️ EXPÉRIENCE 2 -->
+    <!--<div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period"> Ex: Juin 2023 — Août 2023 Juin 2023 — Août 2023</div>
+        <div class="timeline-title"> Intitulé du poste Stage Technicien Systèmes &amp; Réseaux</div>
+        <div class="timeline-subtitle">[Nom Entreprise] · [Ville]</div>
+        <ul class="timeline-desc">
+          <li>Installation et configuration de postes de travail sous Windows 10/11.</li>
+          <li>Mise en place d'un serveur DHCP/DNS sous Windows Server 2019.</li>
+          <li>Câblage et brassage de l'armoire réseau.</li>
+          <li>Support technique de niveau 1 aux utilisateurs.</li>
+        </ul>
+      </div>
+    </div>-->
+
+    <!-- ✏️ EXPÉRIENCE 3 (optionnel) -->
+    <!--<div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">Été 2022</div>
+        <div class="timeline-title">Stage Observation — DSI</div>
+        <div class="timeline-subtitle">[Nom Entreprise] · [Ville]</div>
+        <ul class="timeline-desc">
+          <li>Découverte de l'environnement informatique d'une DSI.</li>
+          <li>Assistance à la gestion du parc informatique.</li>
+        </ul>
+      </div>
+    </div>-->
+
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     FORMATION ACADÉMIQUE
+══════════════════════════════════════════════ -->
+<section id="formation">
+  <div class="section-label">Parcours académique</div>
+  <h2 class="section-title">Ma <em>Formation</em></h2>
+  <div class="section-divider"></div>
+
+  <div class="timeline">
+
+    <!-- ✏️ FORMATION 1 (actuelle) -->
+    <div class="timeline-item">
+      <div class="timeline-dot active"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">2025 - Maintenant</div>
+        <div class="timeline-title">Licence Professionnelle — Administration et Sécurité Réseau</div>
+        <div class="timeline-subtitle">ISE· Yaounde</div>
+        <ul class="timeline-desc">
+          <li>Sécurité des systèmes d'information, cryptographie.</li>
+          <li>Architecture et administration des réseaux d'entreprise.</li>
+          <!--<li>Supervision, métrologie et gestion de parc.</li>
+          <li>Projet tuteuré : [Décrire votre projet].</li>-->
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✏️ FORMATION 2 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">2024</div>
+        <div class="timeline-title">Formation Hacking éthique et Cybérsecurité</div>
+        <div class="timeline-subtitle">Localhost Academy de Douala</div>
+        <ul class="timeline-desc">
+          <li>Mention : Bien</li>
+          <!--<li>Option : Genie logiciel.</li>-->
+          <!--<li>Développement de solutions d'infrastructure sécurisées.</li>-->
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✏️ FORMATION 3 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">2020 — 2023</div>
+        <div class="timeline-title">DUT Genie Informatique</div>
+        <div class="timeline-subtitle">IUT de Douala</div>
+        <ul class="timeline-desc">
+          <li>Mention : Assez-bien</li>
+          <li>Option : Genie logiciel.</li>
+          <!--<li>Développement de solutions d'infrastructure sécurisées.</li>-->
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✏️ FORMATION 4 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">2020</div>
+        <div class="timeline-title">Baccalauréat Général </div>
+        <div class="timeline-subtitle">Lycée Bilingue de SODIKO</div>
+        <ul class="timeline-desc">
+          <li>Mention : Passable.</li>
+          <li>Option : D.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     PROJETS
+══════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-label">Réalisations</div>
+  <h2 class="section-title">Mes <em>Projets</em></h2>
+  <div class="section-divider"></div>
+
+  <div class="projects-grid">
+
+    <!-- ✏️ PROJET 1 -->
+    <div class="project-card">
+      <div class="project-number">// Projet 01</div>
+      <div class="project-title">Simulation Réseau d'Entreprise</div>
+      <p class="project-desc">
+        Conception et simulation d'une infrastructure réseau complète pour une PME : routage OSPF, VLAN, DMZ, firewall et VPN site-à-site sous GNS3 et Packet Tracer.
+      </p>
+      <div class="project-tech">
+        <span class="tech-badge">GNS3</span>
+        <span class="tech-badge">Cisco IOS</span>
+        <span class="tech-badge">OSPF</span>
+        <span class="tech-badge">VLAN</span>
+        <span class="tech-badge">VPN</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="#" class="project-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Démo / Rapport
+        </a>
+      </div>
+    </div>
+
+    <!-- ✏️ PROJET 2 -->
+    <div class="project-card">
+      <div class="project-number">// Projet 02</div>
+      <div class="project-title">Mise en place d'un SOC Basique</div>
+      <p class="project-desc">
+        Déploiement d'un environnement de supervision de sécurité avec Snort (IDS), ELK Stack pour la centralisation des logs et Grafana pour la visualisation des alertes.
+      </p>
+      <div class="project-tech">
+        <span class="tech-badge">Snort</span>
+        <span class="tech-badge">ELK Stack</span>
+        <span class="tech-badge">Grafana</span>
+        <span class="tech-badge">Linux</span>
+        <span class="tech-badge">Docker</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- ✏️ PROJET 3 -->
+    <div class="project-card">
+      <div class="project-number">// Projet 03</div>
+      <div class="project-title">Script d'Audit de Sécurité</div>
+      <p class="project-desc">
+        Développement d'un script Bash automatisant l'audit de configuration d'un système Linux : vérification des droits, services ouverts, mises à jour manquantes et rapport HTML généré automatiquement.
+      </p>
+      <div class="project-tech">
+        <span class="tech-badge">Bash</span>
+        <span class="tech-badge">Linux</span>
+        <span class="tech-badge">Nmap</span>
+        <span class="tech-badge">HTML/CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- ✏️ AJOUTEZ D'AUTRES PROJETS ICI en copiant un bloc project-card -->
+
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     CERTIFICATIONS
+══════════════════════════════════════════════ -->
+<section id="certifications">
+  <div class="section-label">Accréditations</div>
+  <h2 class="section-title">Certifications &amp; <em>Distinctions</em></h2>
+  <div class="section-divider"></div>
+
+  <!--<div class="certs-grid">
+
+    <div class="cert-card">
+      <div class="cert-icon">🏅</div>
+      <div class="cert-info">
+        <div class="cert-name"> Ex: CCNA (Cisco Certified Network Associate) CCNA — Switching, Routing &amp; Wireless</div>
+        <div class="cert-org">Cisco</div>
+        <div class="cert-year"> Année 2024 · En cours</div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🔐</div>
+      <div class="cert-info">
+        <div class="cert-name">CompTIA Security+</div>
+        <div class="cert-org">CompTIA</div>
+        <div class="cert-year">2024 · En cours</div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🐧</div>
+      <div class="cert-info">
+        <div class="cert-name">Linux Essentials</div>
+        <div class="cert-org">LPI (Linux Professional Institute)</div>
+        <div class="cert-year">2023</div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">☁️</div>
+      <div class="cert-info">
+        <div class="cert-name">AWS Cloud Practitioner</div>
+        <div class="cert-org">Amazon Web Services</div>
+        <div class="cert-year">2023</div>
+      </div>
+    </div>
+
+    ✏️ AJOUTEZ D'AUTRES CERTIFICATIONS ici en copiant un bloc cert-card 
+
+  </div> -->
+
+  <!-- Langues -->
+  <h3 style="font-family:var(--font-display);font-size:1.5rem;color:var(--white);margin:3rem 0 1.5rem;">Langues</h3>
+  <div class="certs-grid">
+    <div class="cert-card">
+      <div class="cert-icon">🇫🇷</div>
+      <div class="cert-info">
+        <div class="cert-name">Français</div>
+        <div class="cert-org">Langue maternelle</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🇬🇧</div>
+      <div class="cert-info">
+        <div class="cert-name">Anglais</div>
+        <div class="cert-org">Technique</div>
+        <!--<div class="cert-year">TOEIC [score si obtenu]</div> -->
+      </div>
+    </div>
+    <!-- Ajoutez d'autres langues si besoin -->
+  </div>
+</section>
+
+<hr class="sep-line" />
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-intro">
+    <div class="section-label">Travaillons ensemble</div>
+    <h2 class="section-title">Me <em>Contacter</em></h2>
+    <div class="section-divider"></div>
+
+    <p>
+      Vous avez une opportunité de stage, d'alternance ou un projet réseau à réaliser ? N'hésitez pas à me contacter. Je suis disponible et réactif !
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:klenzornjoume1@gmail.com" class="contact-link-item">
+        <div class="contact-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sky-light)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div class="contact-link-text">
+          <div class="lbl">Email</div>
+          <div class="val">klenzornjoume1@gmail.com</div>
+        </div>
+      </a>
+      <a href="tel:+237697794398" class="contact-link-item">
+        <div class="contact-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sky-light)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.07-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="contact-link-text">
+          <div class="lbl">Téléphone</div>
+          <div class="val">+237 697 794 398 / 682 346 285 / 621 009 326</div>
+        </div>
+      </a>
+      <a href="https://linkedin.com/Klenzor-njoume-4a0096302" target="_blank" class="contact-link-item">
+        <div class="contact-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sky-light)" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div class="contact-link-text">
+          <div class="lbl">LinkedIn</div>
+          <div class="val">linkedin.com/Klenzor-njoume-4a0096302</div>
+        </div>
+      </a>
+      <a href="https://github.com/klenzornjoume" target="_blank" class="contact-link-item">
+        <div class="contact-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sky-light)" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <div class="contact-link-text">
+          <div class="lbl">GitHub</div>
+          <div class="val">github.com/klenzornjoume</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="c-name">Nom &amp; Prénom</label>
+          <input type="text" id="c-name" placeholder="Jean Dupont" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" placeholder="jean@email.com" autocomplete="email" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="c-subject">Sujet</label>
+        <input type="text" id="c-subject" placeholder="Proposition de stage / Collaboration" />
+      </div>
+      <div class="form-group">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" placeholder="Bonjour, je vous contacte pour..."></textarea>
+      </div>
+      <button class="btn-submit" onclick="handleFormSubmit()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg><a href="mailto:klenzornjoume1@gmail.com">
+        Envoyer le message
+        </a>
+      </button>
+      <p id="form-msg" style="display:none;margin-top:1rem;font-size:.85rem;color:var(--gold-light);text-align:center;"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">EPIE NJOUME Klenzor Loic</div>
+  <div class="footer-tagline">Administration &amp; Sécurité Réseau · Licence Pro</div>
+  <div class="footer-socials">
+    <a href="mailto:klenzornjoume1@gmail.com" class="social-btn" aria-label="Email">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+    </a>
+    <a href="https://linkedin.com/Klenzor-njoume-4a0096302" target="_blank" class="social-btn" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://github.com/klenzornjoume" target="_blank" class="social-btn" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    </a>
+  </div>
+  <div class="footer-copy">
+    © <span id="year"></span> <span>[Votre Nom]</span> — Tous droits réservés.
+    Conçu avec passion pour les réseaux.
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<div id="back-top" aria-label="Retour en haut" role="button" tabindex="0">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════ -->
+<script src="portfolio.js"></script>
+</body>
+</html>
